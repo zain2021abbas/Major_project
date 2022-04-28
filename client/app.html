@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Banglore Home Price Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"><b>Estate<span class="dot" style=color:blue>.</span></b></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="file:///C:/Users/ASUS/OneDrive/Documents/GitHub/Real-Estate-price-prediction/client/pro.html">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="file:///C:/Users/ASUS/OneDrive/Documents/GitHub/Real-Estate-price-prediction/client/rent%20house.html#">Rent House</a>
+      <a class="nav-item nav-link" href="file:///C:/Users/ASUS/OneDrive/Documents/GitHub/Real-Estate-price-prediction/client/app.html">Pricing</a>
+      
+    </div>
+  </div>
+</nav>
+<div class="container">
+<div class="img">
+
+
+</div>
+
+<form class="form">
+	<h3>Area (Square Feet)</h3>
+    <input class="area"  type="text" id="uiSqft" class="floatLabel" name="Squareft" value="1000">
+	<h3>BHK</h3>
+	<div class="switch-field">
+		<input type="radio" id="radio-bhk-1" name="uiBHK" value="1"/>
+		<label for="radio-bhk-1">1</label>
+		<input type="radio" id="radio-bhk-2" name="uiBHK" value="2" checked/>
+		<label for="radio-bhk-2">2</label>
+		<input type="radio" id="radio-bhk-3" name="uiBHK" value="3"/>
+		<label for="radio-bhk-3">3</label>
+		<input type="radio" id="radio-bhk-4" name="uiBHK" value="4"/>
+		<label for="radio-bhk-4">4</label>
+		<input type="radio" id="radio-bhk-5" name="uiBHK" value="5"/>
+		<label for="radio-bhk-5">5</label>
+	</div>
+	</form>
+<form class="form">
+
+
+	<h3>Bath</h3>
+	<div class="switch-field">
+		<input type="radio" id="radio-bath-1" name="uiBathrooms" value="1"/>
+		<label for="radio-bath-1">1</label>
+		<input type="radio" id="radio-bath-2" name="uiBathrooms" value="2" checked/>
+		<label for="radio-bath-2">2</label>
+		<input type="radio" id="radio-bath-3" name="uiBathrooms" value="3"/>
+		<label for="radio-bath-3">3</label>
+		<input type="radio" id="radio-bath-4" name="uiBathrooms" value="4"/>
+		<label for="radio-bath-4">4</label>
+		<input type="radio" id="radio-bath-5" name="uiBathrooms" value="5"/>
+		<label for="radio-bath-5">5</label>
+	</div>
+		<h2>Location</h2>
+	<div>
+  <select class="location" name="" id="uiLocations">
+    <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+		<option>Electronic City</option>
+        <option>Rajaji Nagar</option>
+  </select>
+</div>
+	<button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+	<div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+ 
+
+	
+	
+	
+	
+</body>
+</div>
+<!-- Footer -->
+<footer class="page-footer font-small unique-color-dark">
+
+  <div class="bg-dark">
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row py-4 d-flex align-items-center">
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+          <h6 class="mb-0 abc">Get connected with us on social networks!</h6>
+		   <h6 class="text-uppercase font-weight-bold abc">Estate.</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto abc" style="width: 60px;">
+        <p class="abc">The house you looked at today and wanted to think about until tomorrow may be the same house someone looked at yesterday and will buy today</p>
+        </div>
+		<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold abc">Contact</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p class="abc">
+           New York, NY 10012, US</p>
+        <p class="abc"> Estateinfo@example.com</p>
+        <p class="abc"> + 01 234 567 88</p>
+        <p class="abc">+ 01 234 567 89</p>
+
+      </div>
+        <!-- Grid column -->
+		<!-- Copyright -->
+  
+  <!-- Copyright -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+	<div class="footer-copyright text-center py-3" style="color:white">© 2022 Copyright:
+    <a href="file:///C:/Users/ASUS/OneDrive/Documents/GitHub/Real-Estate-price-prediction/client/pro.html" style="color:white"> Estate.com</a>
+  </div>
+  </div>
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+</body>
+</html>
